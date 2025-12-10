@@ -16,7 +16,7 @@
       }
         
       body {
-        background: linear-gradient(180deg, #AAD3FF, white);
+       background: linear-gradient(180deg, #AAD3FF, white);
       }
         
       .content {
@@ -34,181 +34,180 @@
       }
   
       .top-nav {
-          width: 557px;
-          height: 70px; 
-          background: rgba(255, 255, 255, 0.7);
-          border-radius: 14px; 
+       width: 557px;
+       height: 70px; 
+       background: rgba(255, 255, 255, 0.7);
+       border-radius: 14px; 
         
-          position: absolute;
-          top: 30px; 
-          left: 50%; 
-          transform: translateX(-50%);
+       position: absolute;
+       top: 30px; 
+       left: 50%; 
+       transform: translateX(-50%); /* GenAI used to fix positioning */
     
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 65px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 65px;
         
-          font-family: 'Hoefler Text', Georgia, serif;
-          font-style: italic;
-          font-size: 25px;
-          
-          box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
-        }
+       font-family: 'Hoefler Text', Georgia, serif;
+       font-style: italic;
+       font-size: 25px;
+       box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+      }
 
       .top-nav a {
-          text-decoration: none;
-          color: #333; /* dark text */
-          transition: color 0.3s;
-        }
+       text-decoration: none;
+       color: black; 
+       transition: color 0.3s;
+      }
 
       .top-nav a:hover {
-          color: #3498db; /* change on hover */
-        }
+       color: #3498DB; 
+      }
   
       .content div.header1 {
-          font-family: 'PP Playground';
-          font-weight: 0;
-          text-shadow: 0 0 7px rgba(255, 255, 255, 1);
-          font-size: 11em;
-        }
+       font-family: 'PP Playground';
+       font-weight: 0;
+       text-shadow: 0 0 7px rgba(255, 255, 255, 1);
+       font-size: 11em;
+      }
   
       .content div.header2 {
-          font-family: 'Cursive';
-          text-shadow: 0 0 5px rgba(255, 255, 255, 1);
-          font-size: 90px;
-        }
+       font-family: 'Cursive';
+       text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+       font-size: 90px;
+      }
   
-       .p1 {
-          position: absolute; /* M */
-          top: 60px;
-          left: 200px;
-        }
+      /* header text */
+      .p1 {
+       position: absolute; /* M */
+       top: 60px;
+       left: 200px;
+      }
   
-       .p2 {
-          position: absolute; /* y */
-          top: 220px;
-          left: 370px;
-        }
+      .p2 {
+       position: absolute; /* y */
+       top: 220px;
+       left: 370px;
+      }
   
-       .p3 {
-         position: absolute; /* C */
-         top: 5px; 
-         left: 430px;
-        }
+      .p3 {
+       position: absolute; /* C */
+       top: 5px; 
+       left: 430px;
+      }
   
-       .p4 {
-         position: absolute; /* reative */
-         top: 170px; 
-         right: 415px;
-        }
+      .p4 {
+       position: absolute; /* reative */
+       top: 170px; 
+       right: 415px;
+      }
   
-       .p5 {
-         position: absolute; /* L */
-         top: 50px;
-         right: 290px;
-        }
+      .p5 {
+       position: absolute; /* L */
+       top: 50px;
+       right: 290px;
+      }
   
-       .p6 {
-         position: absolute; /* ife */
-         top: 210px;
-         right: 195px;
-        }
+      .p6 {
+       position: absolute; /* ife */
+       top: 210px;
+       right: 195px;
+      }
   
-        .floating-graphic {
-          position: absolute;
-          width: 150px;
-        }
+      .floating-graphic {
+       position: absolute;
+       width: 150px;
+      }
   
-        .g1 {       /* left sparkle */
-          top: 130px;
-          left: 100px;
-          width: 150px;
-          animation: sparkling 1.5s infinite;
-        }
+      .g1 {       /* left sparkle */
+       top: 130px;
+       left: 100px;
+       width: 150px;
+       animation: sparkling 1.5s infinite;
+      }
     
-        .g2 {       /* nav bar sparkle */
-          top: 100px;
-          right: 350px;
-          width: 60px;
-        }
+      .g2 {       /* nav bar sparkle */
+       top: 100px;
+       right: 350px;
+       width: 60px;
+      }
   
-        .g3 {      /* right sparkle */
-         top: 340px;
-         right: 60px;
-         width: 150px;
-         animation: sparkling 1.5s infinite;
-        }
+      .g3 {      /* right sparkle */
+       top: 340px;
+       right: 60px;
+       width: 150px;
+       animation: sparkling 1.5s infinite;
+      }
   
-        @keyframes sparkling {
-          from {width: 150px;}
-          to {width: 170px;}
-        }
+      @keyframes sparkling {
+       from {width: 150px;}
+       to {width: 170px;}
+      }
   
-        .img-grid {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr); /* 2 images per row */
-         gap: 30px; /* space between images */
-         width: 100%;
-         max-width: 800px; /* optional */
-         margin: 500px auto 100px auto;
-         row-gap: 50px;
-        }
+      .img-grid {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr); /* GenAI used to fix rows */
+       gap: 30px; 
+       width: 100%;
+       max-width: 800px; 
+       margin: 500px auto 100px auto;
+       row-gap: 50px;
+      }
   
-        .img-grid img {
-         width: 350px;  
-         height: auto;
-        }
+      .img-grid img {
+       width: 350px;  
+       height: auto;
+      }
   
-        .toggle-card {
-         text-align: center;
-        }
+      .toggle-card {
+       text-align: center;
+      }
 
-        .toggle-card img {
-         width: 350px;
-         height: auto;
-        }
+      .toggle-card img {
+       width: 350px;
+       height: auto;
+      }
 
-        .toggle-card button {
-         margin-top: 10px;
-         background: #aac8ff;
-         padding: 8px 15px;
-         color: white;
-         border: none;
-         border-radius: 10px;
-         cursor: pointer;
-         font-family: 'Hoefler Text', serif;
-         font-style: italic;
-        }
+      .toggle-card button {
+       margin-top: 10px;
+       background: #aac8ff;
+       padding: 8px 15px;
+       color: white;
+       border: none;
+       border-radius: 10px;
+       cursor: pointer;
+       font-family: 'Hoefler Text', serif;
+       font-style: italic;
+      }
 
-        .toggle-text {
-         display: none;
-         margin-top: 12px;
-         padding: 12px;
-         background: rgba(255,255,255,0.5);
-         border-radius: 10px;
-         color: grey;
-        }
+      .toggle-text {
+       display: none;
+       margin-top: 12px;
+       padding: 12px;
+       background: rgba(255,255,255,0.5);
+       border-radius: 10px;
+       color: grey;
+      }
   
-        footer {
-          margin-top: auto;
-          background: rgba(255, 255, 255, 0.8);
-          padding: 30px;
-          color: grey;
-          font-family: 'InaiMathi', serif;
-          padding-top: 50px;
-          border-radius: 30px;
-        }
+      footer {
+       margin-top: auto;
+       background: rgba(255, 255, 255, 0.8);
+       padding: 30px;
+       color: grey;
+       font-family: 'InaiMathi', serif;
+       padding-top: 50px;
+       border-radius: 30px;
+      }
   
-        footer .right {
-          text-align: right;
-        }
+      footer .right {
+       text-align: right;
+      }
   
     </style>
   </head>
-  <body>
-     
-         <div class="content">
+<body>
+    <div class="content">
            
              <nav  class="top-nav">
             <a href="https://janellelai.github.io/Final-website/">Home</a>
@@ -235,7 +234,7 @@
            <div class="img-grid">
             <div class="toggle-card">
               <img src="dairyimg.png" alt="My dairy">
-              <button onclick="toggleText(this)">Show Info ▼</button>
+              <button onclick="toggleText(this)">Show Info ▼</button> <!-- GenAI used to fix toggle on specific text -->
               <div class="toggle-text">I enjoy decorating my diary with stickers, little collages, and photos with my friends. It’s my way of keeping all my favorite memories in one place!</div>
             </div>
 
@@ -269,23 +268,23 @@
               <div class="toggle-text">I’m the type who instantly takes out their camera whenever I spot a pretty view. Photography is special to me because it captures moments my eyes can’t save on their own.</div>
             </div>
              
-<script>
-  function toggleText(button) {
-  const textBox = button.nextElementSibling;
-    if (textBox.style.display === "block") {
-    textBox.style.display = "none";
-    button.textContent = "Show Info ▼";
-    } else {
-    textBox.style.display = "block";
-    button.textContent = "Hide Info ▲";
-    }
-  }
-</script>
-           </div>      
+        <!-- GenAI used to fix Java script -->
+        <script> 
+          function toggleText(button) {
+          const textBox = button.nextElementSibling;
+          if (textBox.style.display === "block") {
+          textBox.style.display = "none";
+          button.textContent = "Show Info ▼";
+          } else {
+            textBox.style.display = "block";
+            button.textContent = "Hide Info ▲";
+            }
+          }
+         </script>
+      </div>      
             
-           <footer>  DESIGNED &amp; BUILT WITH <br> FIGMA &amp; NETNET STUDIO <div class="right"><a href="https://youtu.be/SVkGRoLicuA?si=4Jq4r4ODuFLYXLRW" target="_blank">🎵 BGM</a></div> 
-           </footer>
-         </div>
-   
+      <footer>  DESIGNED &amp; BUILT WITH <br> FIGMA &amp; NETNET STUDIO        <div class="right"><a href="https://youtu.be/SVkGRoLicuA?si=4Jq4r4ODuFLYXLRW" target="_blank">🎵 BGM</a></div> 
+      </footer>
+    </div>
   </body>
 </html>
