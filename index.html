@@ -124,22 +124,29 @@
           width: 150px;
         }
   
-        .g1 {
-          top: 140px;
+        .g1 {       /* left sparkle */
+          top: 130px;
           left: 100px;
           width: 150px;
+          animation: sparkling 1.5s infinite;
         }
     
-        .g2 {
+        .g2 {       /* nav bar sparkle */
           top: 100px;
           right: 350px;
           width: 60px;
         }
   
-        .g3 {
-        top: 340px;
-        right: 80px;
-        width: 150px;
+        .g3 {      /* right sparkle */
+         top: 340px;
+         right: 60px;
+         width: 150px;
+         animation: sparkling 1.5s infinite;
+        }
+  
+        @keyframes sparkling {
+          from {width: 150px;}
+          to {width: 170px;}
         }
   
         .img-grid {
